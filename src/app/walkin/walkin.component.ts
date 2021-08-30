@@ -11,6 +11,7 @@ import { FormGroup, FormControl,FormBuilder, Validators} from '@angular/forms';
 export class WalkinComponent implements OnInit {
   form: FormGroup;
   submitted = false;
+  url = 'http://localhost:3205/api/patient'
 
   constructor(private http: HttpClient ,private fb: FormBuilder, private router: Router,) { 
     this.createForm();
@@ -39,8 +40,8 @@ export class WalkinComponent implements OnInit {
     }
 
     console.log(this.form.value );
-    this.http.post<any>(`${this.url}/AddOwner`,  this.form.value   ).subscribe(data => {
-
+    this.http.post<any>(`${this.url}/Addpatient`,  this.form.value   ).subscribe(data => {
+console.log(data);
     }, err => {
           console.log(err);
         })

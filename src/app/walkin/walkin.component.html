@@ -1,0 +1,45 @@
+<div class="main-page">
+    <div class="contents-page col-lg-9">
+        <div class="headingz">
+            <h4>Walk-in</h4>
+        </div>
+        <div class="page contents">
+            
+          <div class="row">
+           <div class="col-md-8 col-lg-9">
+          <div class="front-form row">
+           <div class="col-md-12">   
+              <form  [formGroup]="form" novalidate>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <label>Patient</label>
+                    <input type="text" class="form-control" formControlName="patient" [ngClass]="{ 'is-invalid': submitted && f.patient.errors }">
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                    <label>Contact</label>
+                    <input type="text" class="form-control" formControlName="contact" [ngClass]="{ 'is-invalid': submitted && f.contact.errors }">
+                    </div>    
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <label>Appointment</label>
+                    <input type="text" class="form-control" formControlName="appointment" [ngClass]="{ 'is-invalid': submitted && f.appointment.errors }">
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                    <label>Wanted</label>
+                    <input type="text" class="form-control" formControlName="wanted" [ngClass]="{ 'is-invalid': submitted && f.wanted.errors }">
+                    </div>    
+                </div>
+        <br>
+                
+        <a  class="btn btn-primary"  (click)= addPatient()>SAVE</a>        
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>

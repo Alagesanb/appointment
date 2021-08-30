@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+.customClass{
+    padding: 0%;
+}
+
+
+.nav-tabs {
+
+    background-color: rgb(13 110 253 / 25%);
+}
+
+.contents-page {
+    flex: 1;
+    padding: 15px 15px 30px 25px;
+    max-width: 100%;
+}
+.headingz {
+    margin-bottom: 10px;
+    color: #2f2c2c;
+    margin: 0px 0px 0px 36px;
+
+}
+
+.front-form .btn-outline-secondary {
+    color: #6c757d;
+    background-color: #f2f4f4;
+    background-image: none;
+    border: none;
+}
+
+.front-form{
+    margin-top: 20px;
+    width:inherit;
+
+} 
+.accordion .front-form{
+    margin-top: 0;
+}
+
+.page.contents.fix-page {
+    padding: 16px;
+    padding-bottom: 60px;
+}
+
+.page.contents {
+    background: #fff;
+    padding: 30px;
+    border-radius: 0px;
+    box-shadow: 2px 1px 8px #ccc;
+    min-height: 100vh;
+    margin-bottom: 200px;
+    
+
+}
+
+
+.main-page {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  
+    .contents-page {
+        position: absolute;
+        padding: 10px;
+        margin-top: 100px;
+        max-width: 100%;
+
+    }
+    .col-md-12.dash-filter {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .page.contents {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+        display: block;
+        position: relative;
+        margin-left: auto;
+
+        /* margin-right: 0px;
+        margin-bottom: 0px; */
+    }
+
+    a.nav-link {
+    text-align: center;
+}
+   
+
+     
+    
+    
+}
